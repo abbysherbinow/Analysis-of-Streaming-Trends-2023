@@ -19,7 +19,6 @@ This project explores relationships between musical characteristics and streamin
 ## Key Findings
 - **Streaming performance and Spotify chart counts:** The analysis found a weak positive correlation between Spotify chart counts and total streams (\(r = 0.253\)). Linear regression showed a statistically significant relationship, but the model explained only about 6.4% of the variation in streams.
 - **Musical key and mode:** A chi-squared test found a statistically significant association between musical key and mode (\(\chi^2 = 75.841\), \(df = 10\), \(p < 0.001\)).
-- **Musical characteristics:** The analysis examined the distributions of BPM, musical key, and mode, along with average streaming counts across BPM intervals and musical keys.
 
 ## Tools
 - R
