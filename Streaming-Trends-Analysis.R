@@ -138,7 +138,8 @@ barplot(numsongs,
         main = "Beats Per Minute of the Top Songs of 2023",
         xlab = "Beats per Minute",
         ylab = "Number of Songs",
-        names.arg = c("50-75", "75-100", "100-125", "125-150", "150-175", "175-200", "200-225"),
+        names.arg = c(">50-75", ">75-100", ">100-125", ">125-150",
+                      ">150-175", ">175-200", ">200-225"),
         col = c("purple","purple", "blue", "purple", "purple", "purple", "purple"))
 
 dev.new()
@@ -147,7 +148,8 @@ barplot(streamsxbpm,
         and Their Average Number of Streams",
         xlab = "Beats per Minute",
         ylab = "Average Number of Streams",
-        names.arg = c("50-75", "75-100", "100-125", "125-150", "150-175", "175-200", "200-225"),
+        names.arg = c(">50-75", ">75-100", ">100-125", ">125-150",
+                      ">150-175", ">175-200", ">200-225"),
         col = c("purple","purple", "purple", "purple", "purple", "blue", "blue"))
 
 
