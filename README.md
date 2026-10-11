@@ -10,10 +10,10 @@ This project explores relationships between musical characteristics and streamin
 - What relationship exists between Spotify chart data and total streams?
 
 ## Methods
-- **Data cleaning:** Removed observations with missing values and one additional observation identified during data review.
+- **Data cleaning:** Removed observations with missing values, excluded rows with blank musical-key values, and removed one additional observation identified during data review.
 - **Exploratory data analysis:** Used bar charts and frequency tables to examine distributions of BPM, musical key, and mode.
 - **Descriptive statistics:** Calculated summary statistics for total streams and BPM.
-- **Regression and correlation:** Examined the relationship between Spotify chart data and total streams.
+- **Regression and correlation:** Examined the relationship between Spotify chart counts and total streams using correlation and linear regression.
 - **Chi-squared hypothesis testing:** Tested for an association between musical key and mode.
 
 ## Tools
@@ -26,4 +26,4 @@ This project explores relationships between musical characteristics and streamin
 The analysis uses the *Most Streamed Spotify Songs 2023* dataset from Kaggle, which contains song characteristics and streaming-related metrics.
 
 ## Limitations
-The analysis excludes observations with missing values, reducing the dataset from 943 to 857 observations. BPM was grouped into intervals for visualization, which limits the ability to assess individual song-level patterns. Observed associations do not establish causation or guarantee that musical characteristics can predict a song's popularity.
+The analysis uses 857 observations after data cleaning. Rows with blank musical-key values and one additional observation were excluded. BPM was grouped into intervals for visualization, limiting the ability to assess individual song-level patterns. Although Spotify chart counts and total streams had a statistically significant positive relationship, the regression model explained only about 6.4% of the variation in streams. Observed associations do not establish causation.
