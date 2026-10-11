@@ -29,5 +29,10 @@ This project explores relationships between musical characteristics and streamin
 ## Dataset
 The analysis uses the *Most Streamed Spotify Songs 2023* dataset from Kaggle, which contains song characteristics and streaming-related metrics.
 
+## Files
+- `Streaming-Trends-Analysis.R`: R script containing the data cleaning, exploratory data analysis, visualizations, descriptive statistics, regression analysis, and chi-squared hypothesis test.
+- `spotify-2023.csv`: Dataset used for the analysis.
+- `Analysis-of-Streaming-Trends-2023.Rproj`: RStudio project file for opening the project in RStudio.
+
 ## Limitations
 The analysis uses 857 observations after data cleaning. Rows with blank musical-key values and one additional observation were excluded. BPM was grouped into intervals for visualization, limiting the ability to assess individual song-level patterns. Although Spotify chart counts and total streams had a statistically significant positive relationship, the regression model explained only about 6.4% of the variation in streams. Observed associations do not establish causation.
