@@ -18,10 +18,16 @@ data1$ID <- seq.int(nrow(data1))
 
 #add ID column
 
-data1_nona <- na.omit(data1)
-#(exlcude rows that have missing data, NA)
 
-clean_data1 <- data1_nona[ !(data1_nona$ID %in% c(575)), ]
+# Remove rows with missing values or blank musical keys
+data1_nona <- na.omit(data1)
+data1_nona <- data1_nona[
+  !is.na(data1_nona$spotify_2023.key) &
+    trimws(data1_nona$spotify_2023.key) != "",
+]
+
+# Exclude the additional observation identified during data review
+clean_data1 <- data1_nona[!(data1_nona$ID %in% c(575)), ]
 
 #remove specific row
 
